@@ -8,4 +8,4 @@ RUN npm install
 
 EXPOSE 8000
 
-CMD ["npm", "run", "dev"]
+CMD ["bash", "-c", "cd src && npx drizzle-kit push && cd .. && npm run dev"]
